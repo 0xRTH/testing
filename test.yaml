@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Example API
-  description: This is an example API with OAuth 2.0 authentication.
+  description: <a id=swaggerUIRedirectOauth2><a id=swaggerUIRedirectOauth2 name=redirectUrl href=coucou>This is an example API with OAuth 2.0 authentication.
   version: 1.0.0
 servers:
   - url: https://api.example.com/v1
