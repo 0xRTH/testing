@@ -1,24 +1,45 @@
 openapi: 3.0.0
 info:
-  title: Sample API
-  description: <a href="https://api.cm.com/paymentservices/v1/docs/oauth2-redirect.html" rel="opener" target="_blank"><input type="submit" value="Open URL in new window"></form> HTML.
-  version: 0.1.9
+  title: Example API
+  description: This is an example API with OAuth 2.0 authentication.
+  version: 1.0.0
 servers:
-  - url: http://api.example.com/v1
-    description: Optional server description, e.g. Main (production) server
-  - url: http://staging-api.example.com
-    description: Optional server description, e.g. Internal staging server for testing
+  - url: https://api.example.com/v1
 paths:
   /users:
     get:
-      summary: Returns a list of users.
-      description: Optional extended description in CommonMark or HTML.
+      summary: List users
+      description: Returns a list of users.
       responses:
-        '200':    # status code
-          description: A JSON array of user names
-          content:
-            application/json:
-              schema: 
-                type: array
-                items: 
+        '200':
+          description: A list of users.
+    post:
+      summary: Create user
+      description: Creates a new user.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              type: object
+              properties:
+                username:
                   type: string
+                password:
+                  type: string
+      responses:
+        '201':
+          description: User created successfully.
+components:
+  securitySchemes:
+    OAuth2:
+      type: oauth2
+      flows:
+        authorizationCode:
+          authorizationUrl: https://auth.example.com/oauth/authorize
+          tokenUrl: https://auth.example.com/oauth/token
+          scopes:
+            read: Grants read access
+            write: Grants write access
+security:
+  - OAuth2: ['read', 'write']
