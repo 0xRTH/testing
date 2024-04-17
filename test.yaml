@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Sample API
-  description: <form action="https://api.cm.com/paymentservices/v1/docs/oauth2-redirect.html" target="_blank"><input type="submit" value="Open URL in new window"></form> HTML.
+  description: <a href="https://api.cm.com/paymentservices/v1/docs/oauth2-redirect.html" rel="opener" target="_blank"><input type="submit" value="Open URL in new window"></form> HTML.
   version: 0.1.9
 servers:
   - url: http://api.example.com/v1
