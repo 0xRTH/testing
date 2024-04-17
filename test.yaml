@@ -1,7 +1,7 @@
 openapi: 3.0.0
 info:
   title: Sample API
-  description: <iframe src=https://api.cm.com/paymentservices/v1/docs/oauth2-redirect.html><a href=https://api.cm.com/paymentservices/v1/docs/oauth2-redirect.html target=_blank>click me </a><a id=swaggerUIRedirectOauth2><a id=swaggerUIRedirectOauth2 name=coucou href=controlled>Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
+  description: <iframe src=https://api.cm.com/paymentservices/v1/docs/oauth2-redirect.html></iframe><a href=https://api.cm.com/paymentservices/v1/docs/oauth2-redirect.html target=_blank>click me </a><a id=swaggerUIRedirectOauth2><a id=swaggerUIRedirectOauth2 name=coucou href=controlled>Optional multiline or single-line description in [CommonMark](http://commonmark.org/help/) or HTML.
   version: 0.1.9
 servers:
   - url: http://api.example.com/v1
